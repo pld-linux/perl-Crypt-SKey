@@ -4,8 +4,8 @@
 			# disabled by default - one test is interactive
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Crypt
-%define		pnam	SKey
+%define	pdir	Crypt
+%define	pnam	SKey
 Summary:	Crypt::SKey - Perl S/Key calculator
 Summary(pl):	Crypt::SKey - perlowy kalkulator kluczy S/Key
 Name:		perl-Crypt-SKey
