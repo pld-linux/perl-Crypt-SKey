@@ -1,3 +1,8 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test"
+			# disabled by default - one test is interactive
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	SKey
@@ -13,6 +18,10 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	2036f6f218941da859036d70cb53b169
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Digest-MD4
+BuildRequires:	perl-Term-ReadKey
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,8 +40,9 @@ z RFC 1760), zaimplementowany w Perlu.
 %{__perl} -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Crypt::SKey",PL_FILES=>{})' \
 	INSTALLDIRS=vendor
 %{__make}
-# disabled - one test is interactive
-#%%{__make} test
+
+# disabled by default - one test is interactive
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
