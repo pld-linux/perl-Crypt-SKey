@@ -4,7 +4,7 @@
 Summary:	Crypt::SKey - Perl S/Key calculator
 Summary(pl):	Crypt::SKey - perlowy kalkulator kluczy S/Key
 Name:		perl-Crypt-SKey
-Version:	0.04
+Version:	0.05
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
