@@ -29,7 +29,7 @@ z RFC 1760), zaimplementowany w Perlu.
 %{__perl} -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Crypt::SKey",PL_FILES=>{})'
 %{__make}
 # disabled - one test is interactive
-#%{__make} test
+#%%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
