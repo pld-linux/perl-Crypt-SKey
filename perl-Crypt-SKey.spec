@@ -26,7 +26,7 @@ z RFC 1760), zaimplementowany w Perlu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Crypt::SKey",PL_FILES=>{})'
+%{__perl} -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Crypt::SKey",PL_FILES=>{})'
 %{__make}
 # disabled - one test is interactive
 #%{__make} test
