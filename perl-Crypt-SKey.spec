@@ -6,7 +6,8 @@ Summary(pl):	Crypt::SKey - perlowy kalkulator kluczy S/Key
 Name:		perl-Crypt-SKey
 Version:	0.06
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2036f6f218941da859036d70cb53b169
