@@ -7,7 +7,7 @@
 %define		pdir	Crypt
 %define		pnam	SKey
 Summary:	Crypt::SKey - Perl S/Key calculator
-Summary(pl):	Crypt::SKey - perlowy kalkulator kluczy S/Key
+Summary(pl.UTF-8):   Crypt::SKey - perlowy kalkulator kluczy S/Key
 Name:		perl-Crypt-SKey
 Version:	0.07
 Release:	1
@@ -30,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module contains a simple S/Key calculator (as described in RFC
 1760) implemented in Perl.
 
-%description -l pl
-Ten modu≥ zawiera prosty kalkulator do kluczy S/Key (zgodny z opisem
+%description -l pl.UTF-8
+Ten modu≈Ç zawiera prosty kalkulator do kluczy S/Key (zgodny z opisem
 z RFC 1760), zaimplementowany w Perlu.
 
 %prep
