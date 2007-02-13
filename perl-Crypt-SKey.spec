@@ -7,7 +7,7 @@
 %define		pdir	Crypt
 %define		pnam	SKey
 Summary:	Crypt::SKey - Perl S/Key calculator
-Summary(pl.UTF-8):   Crypt::SKey - perlowy kalkulator kluczy S/Key
+Summary(pl.UTF-8):	Crypt::SKey - perlowy kalkulator kluczy S/Key
 Name:		perl-Crypt-SKey
 Version:	0.07
 Release:	1
