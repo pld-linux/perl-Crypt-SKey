@@ -3,7 +3,6 @@
 %bcond_with	tests	# perform "make test"
 			# disabled by default - one test is interactive
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	SKey
 Summary:	Crypt::SKey - Perl S/Key calculator
